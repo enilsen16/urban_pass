@@ -6,10 +6,10 @@ require 'word_picker/version'
 Gem::Specification.new do |spec|
   spec.name          = "word_picker"
   spec.version       = WordPicker::VERSION
-  spec.authors       = ["Erik Nilsen"]
-  spec.email         = ["enilsen16@live.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.authors       = ["Erik Nilsen, Marco Lindsey"]
+  spec.email         = ["enilsen16@live.com , marco@marcolindsey.com"]
+  spec.summary       = %q{A random word generator for things}
+  spec.description   = %q{A random word generator for things}
   spec.homepage      = ""
   spec.license       = "MIT"
 
