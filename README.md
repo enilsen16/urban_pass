@@ -1,6 +1,9 @@
 # UrbanPass
 
-TODO: Write a gem description
+After dealing with multiple password generators. We decided to create a password generator thats a little different.
+
+![CorrectHorseBatteryStaple](http://i.imgur.com/T9PApGP.png)
+
 
 ## Installation
 
@@ -20,12 +23,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Coming soon
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/urban_pass/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+###Git Commit Messages
+- Use the present tense ("Add feature" not "Added feature")
+- Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
+- Limit the first line to 72 characters or less
+- Reference issues and pull requests liberally
+- When contributing please consider starting the commit message with an applicable emoji:
+
+  - :lipstick: `:lipstick:` when improving the format/structure of the code
+  - :racehorse: `:racehorse:` when improving performance
+  - :memo: `:memo:` when writing docs
+  - :penguin: `:penguin:` when fixing something on Linux
+  - :apple: `:apple:` when fixing something on Mac OS
+  - :checkered_flag: `:checkered_flag:` when fixing something on Windows
+  - :bug: `:bug:` when fixing a bug
+  - :fire: `:fire:` when removing code or files
+  - :green_heart: `:green_heart:` when fixing the CI build
+  - :white_check_mark: `:white_check_mark:` when adding tests
+  - :lock: `:lock:` when dealing with security
+  - :arrow_up: `:arrow_up:` when upgrading dependencies
