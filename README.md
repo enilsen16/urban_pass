@@ -25,7 +25,7 @@ Or install it yourself as:
 
 Coming soon
 
-## Contributing
+## Contribution Guidelines
 
 ###Git Commit Messages
 - Use the present tense ("Add feature" not "Added feature")
