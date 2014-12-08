@@ -1,15 +1,15 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'word_picker/version'
+require 'urban_pass/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "word_picker"
-  spec.version       = WordPicker::VERSION
-  spec.authors       = ["Erik Nilsen, Marco Lindsey"]
-  spec.email         = ["enilsen16@live.com , marco@marcolindsey.com"]
-  spec.summary       = %q{A random word generator for things}
-  spec.description   = %q{A random word generator for things}
+  spec.name          = "urban_pass"
+  spec.version       = UrbanPass::VERSION
+  spec.authors       = ["Erik Nilsen"]
+  spec.email         = ["enilsen16@live.com"]
+  spec.summary       = %q{TODO: Write a short summary. Required.}
+  spec.description   = %q{TODO: Write a longer description. Optional.}
   spec.homepage      = ""
   spec.license       = "MIT"
 

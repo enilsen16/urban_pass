@@ -1,4 +1,4 @@
-Copyright (c) 2014 Erik Nilsen
+Copyright (c) 2014 Erik Nilsen Marco Lindsey
 
 MIT License
 

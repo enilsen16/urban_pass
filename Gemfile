@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in word_picker.gemspec
+# Specify your gem's dependencies in urban_pass.gemspec
 gemspec
