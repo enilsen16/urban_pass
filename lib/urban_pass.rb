@@ -1,5 +1,2 @@
 require "urban_pass/version"
-
-module UrbanPass
-  # Your code goes here...
-end
+require "urban_pass/generate"
