@@ -2,7 +2,8 @@ require "test_helper"
 
 describe "Generate" do
   before do
-    @word = UrbanPass::Generate.new.random_word
+    @urban = UrbanPass::Generate.new
+    @word = @urban.random_word
   end
 
   it "opens a new html document" do
@@ -10,7 +11,13 @@ describe "Generate" do
   end
 
   it "removes all spaces from the word" do
-    urban = UrbanPass::Generate.new.remove_spaces(@word)
+    urban = @urban.remove_spaces(@word)
     urban.wont_include " "
+  end
+
+  it "returns length of word" do
+    word = @urban.remove_spaces(@word)
+    word_size = @urban.word_length(word)
+    word_size.must_equal word.length
   end
 end

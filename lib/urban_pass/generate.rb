@@ -17,5 +17,9 @@ module UrbanPass
 
     def generate
     end
+
+    def word_length(word)
+      return word.length
+    end
   end
 end
