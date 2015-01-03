@@ -17,7 +17,7 @@ describe "Generate" do
 
   it "returns length of word" do
     word = @urban.remove_spaces(@word)
-    word_size = @urban.word_length(word)
+    word_size = @urban.phrase_length(word)
     word_size.must_equal word.length
   end
 end

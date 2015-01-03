@@ -11,15 +11,15 @@ module UrbanPass
       word = page.css('a.word')[0].text
     end
 
-    def remove_spaces(word)
-      word.gsub(" ", "")
+    def remove_spaces(phrase)
+      phrase.gsub(" ", "")
     end
 
     def generate
     end
 
-    def word_length(word)
-      return word.length
+    def phrase_length(phrase)
+      return phrase.length
     end
   end
 end
