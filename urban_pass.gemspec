@@ -6,11 +6,11 @@ require 'urban_pass/version'
 Gem::Specification.new do |spec|
   spec.name          = "urban_pass"
   spec.version       = UrbanPass::VERSION
-  spec.authors       = ["Erik Nilsen"]
-  spec.email         = ["enilsen16@live.com"]
-  spec.summary       = %q{A password generator that uses the Urban Dictonary API.}
-  spec.description   = %q{A password generator that creates random passwords based on the Urban Dictonary API.}
-  spec.homepage      = ""
+  spec.authors       = ["Erik Nilsen", "Marco Lindsay"]
+  spec.email         = ["enilsen16@live.com", "lindsay_marco@hotmail.com"]
+  spec.summary       = %q{A password generator from Urban Dictonary.}
+  spec.description   = %q{A password generator that creates random passwords based on words in Urban Dictonary.}
+  spec.homepage      = "https://github.com/Marco-Lindsay/word_picker"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
