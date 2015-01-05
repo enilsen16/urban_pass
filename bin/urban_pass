@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
 require 'urban_pass'
 pass_phrase = UrbanPass::Generate.new
-pass_phrase.generate
+password = pass_phrase.generate_phrase
+puts "Your password is: #{password}"
