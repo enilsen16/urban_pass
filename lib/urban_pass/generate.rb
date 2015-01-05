@@ -9,11 +9,11 @@ module UrbanPass
       urban = random_word
 
       # Remove the extra spaces
-      phrase = remove_spaces(urban)
+      word = remove_spaces(urban)
 
       # Return the length of the phrase and print out the word
-      puts "Your new password is: #{phrase}"
-      puts "The word is #{phrase_length(phrase)} charcters long"
+      puts "Your word is: #{word}"
+      puts "The word is #{phrase_length(word)} charcters long"
     end
 
     def random_word
@@ -28,6 +28,16 @@ module UrbanPass
 
     def phrase_length(phrase)
       return phrase.length
+    end
+
+    def generate_phrase
+      arr = []
+      4.times do
+        word = random_word
+        arr << remove_spaces(word)
+      end
+      pass_phrase = arr.join
+      return pass_phrase
     end
   end
 end
