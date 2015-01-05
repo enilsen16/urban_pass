@@ -13,9 +13,9 @@ module UrbanPass
 
       # Return the length of the phrase and print out the word
       puts "Your new password is: #{phrase}"
-      puts "The word is #{phrase_length} charcters long"
+      puts "The word is #{phrase_length(phrase)} charcters long"
     end
-    
+
     def random_word
       page = Nokogiri::HTML(open("http://urbandictionary.com/random.php"))
       word = page.css('a.word')[0].text
