@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'urban_pass'
+pass_phrase = UrbanPass::Generate.new
+pass_phrase.generate
