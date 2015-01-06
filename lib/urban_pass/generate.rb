@@ -5,7 +5,7 @@ require 'clipboard'
 module UrbanPass
   class Generate
 
-    def generate
+    def generate_word
       # Generate word:
       urban = random_word
 
@@ -15,6 +15,17 @@ module UrbanPass
       # Return the length of the phrase and print out the word
       puts "Your word is: #{word}"
       puts "The word is #{phrase_length(word)} charcters long"
+    end
+
+    def generate_phrase
+      arr = []
+      4.times do
+        word = random_word
+        arr << remove_spaces(word)
+      end
+      pass_phrase = arr.join
+      copy(pass_phrase)
+      return pass_phrase
     end
 
     def random_word
@@ -31,16 +42,6 @@ module UrbanPass
       return phrase.length
     end
 
-    def generate_phrase
-      arr = []
-      4.times do
-        word = random_word
-        arr << remove_spaces(word)
-      end
-      pass_phrase = arr.join
-      copy(pass_phrase)
-      return pass_phrase
-    end
 
     def copy(phrase)
       word = Clipboard.copy(phrase)
