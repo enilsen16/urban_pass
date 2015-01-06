@@ -1,5 +1,6 @@
 require 'open-uri'
 require 'nokogiri'
+require 'clipboard'
 
 module UrbanPass
   class Generate
@@ -37,7 +38,16 @@ module UrbanPass
         arr << remove_spaces(word)
       end
       pass_phrase = arr.join
+      copy(pass_phrase)
       return pass_phrase
+    end
+
+    def copy(phrase)
+      word = Clipboard.copy(phrase)
+      if Clipboard.paste == phrase
+        puts "The password was copied correctly!!"
+        return word
+      end
     end
   end
 end

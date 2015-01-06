@@ -20,4 +20,10 @@ describe "Generate" do
     word_size = @urban.phrase_length(word)
     word_size.must_equal word.length
   end
+
+  it "copies te returned word to the clipboard" do
+    word = @urban.remove_spaces(@word)
+    copied = @urban.copy(word)
+    Clipboard.paste.must_equal copied
+  end
 end
