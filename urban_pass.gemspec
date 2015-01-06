@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = UrbanPass::VERSION
   spec.authors       = ["Erik Nilsen", "Marco Lindsay"]
   spec.email         = ["enilsen16@live.com", "lindsay_marco@hotmail.com"]
-  spec.summary       = %q{A password generator from Urban Dictonary.}
-  spec.description   = %q{A password generator that creates random passwords based on words in Urban Dictonary.}
-  spec.homepage      = "https://github.com/Marco-Lindsay/word_picker"
+  spec.summary       = %q{A password generator from Urban Dictionary.}
+  spec.description   = %q{A password generator that creates random passwords based on words in Urban Dictionary.}
+  spec.homepage      = "https://github.com/enilsen16/urban_pass"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
