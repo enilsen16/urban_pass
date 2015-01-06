@@ -30,7 +30,7 @@ module UrbanPass
 
     def random_word
       page = Nokogiri::HTML(open("http://urbandictionary.com/random.php"))
-      word = page.css('a.word')[0].text
+      page.css('a.word')[0].text
     end
 
     def remove_spaces(phrase)
