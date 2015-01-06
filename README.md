@@ -1,4 +1,5 @@
 # UrbanPass
+[![Gem Version](https://badge.fury.io/rb/urban_pass.svg)](http://badge.fury.io/rb/urban_pass)
 
 After dealing with multiple password generators. We decided to create a password generator thats a little different.
 
