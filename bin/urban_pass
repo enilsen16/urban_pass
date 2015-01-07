@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
+
 require 'urban_pass'
-pass_phrase = UrbanPass::Generate.new
-password = pass_phrase.generate_phrase
-puts "Your password is: #{password}"
+require 'urban_pass/cli'
+
+pass_phrase = UrbanPass::CLI.start
+puts "Your password is #{pass_phrase}"
+puts "It was copied correctly"

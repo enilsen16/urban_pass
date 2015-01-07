@@ -10,11 +10,7 @@ module UrbanPass
       urban = random_word
 
       # Remove the extra spaces
-      word = remove_spaces(urban)
-
-      # Return the length of the phrase and print out the word
-      puts "Your word is: #{word}"
-      puts "The word is #{phrase_length(word)} charcters long"
+      remove_spaces(urban)
     end
 
     def generate_phrase
@@ -46,7 +42,6 @@ module UrbanPass
     def copy(phrase)
       word = Clipboard.copy(phrase)
       if Clipboard.paste == phrase
-        puts "The password was copied correctly!!"
         return word
       end
     end
