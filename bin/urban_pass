@@ -3,6 +3,4 @@
 require 'urban_pass'
 require 'urban_pass/cli'
 
-pass_phrase = UrbanPass::CLI.start
-puts "Your password is #{pass_phrase}"
-puts "It was copied correctly"
+UrbanPass::CLI.start

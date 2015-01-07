@@ -7,11 +7,11 @@ module UrbanPass
     desc "generate_phrase", "creates a new pass-phrase"
     def generate_phrase
       urban = UrbanPass::Generate.new
-      urban.generate_phrase
+      pass_phrase = urban.generate_phrase
+      puts "Your password is #{pass_phrase}"
+      puts "It was copied correctly"
     end
+
     default_task :generate_phrase
-    # if ARGV.empty?
-    #   UrbanPass::CLI.new.generate_phrase
-    # end
   end
 end
