@@ -16,7 +16,8 @@ Install it yourself as:
 
 ```
 Commands:
-  urban_pass generate_phrase  # creates a new pass-phrase
+  urban_pass                  # Alias for urban_pass generate_phrase 
+  urban_pass generate_phrase  # Creates a new pass-phrase
   urban_pass help [COMMAND]   # Describe available commands or one specific command
 ```
 
