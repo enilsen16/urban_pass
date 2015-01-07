@@ -14,7 +14,11 @@ Install it yourself as:
 
 ## Usage
 
-Coming soon
+```
+Commands:
+  urban_pass generate_phrase  # creates a new pass-phrase
+  urban_pass help [COMMAND]   # Describe available commands or one specific command
+```
 
 ## Contribution Guidelines
 
