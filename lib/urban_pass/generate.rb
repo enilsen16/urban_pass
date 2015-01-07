@@ -1,6 +1,7 @@
 require 'open-uri'
 require 'nokogiri'
 require 'clipboard'
+require 'thread'
 
 module UrbanPass
   class Generate
@@ -15,11 +16,18 @@ module UrbanPass
 
     def generate_phrase
       arr = []
-      4.times do
-        word = random_word
-        arr << remove_spaces(word)
+      4.times do |i|
+        arr[i] = Thread.new {
+          Thread.current["word"] = generate_word
+        }
       end
-      pass_phrase = arr.join
+      arr2 = []
+      arr.each do |t|
+        t.join
+        arr2 << t["word"]
+      end
+      pass_phrase = arr2.join("")
+      pass_phrase = remove_spaces(pass_phrase)
       copy(pass_phrase)
       return pass_phrase
     end
