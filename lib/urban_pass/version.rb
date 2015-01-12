@@ -1,3 +1,3 @@
 module UrbanPass
-  VERSION = "0.0.4.2"
+  VERSION = "0.1.0"
 end
