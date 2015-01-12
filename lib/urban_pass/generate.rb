@@ -1,6 +1,7 @@
 require 'open-uri'
 require 'nokogiri'
 require 'clipboard'
+require 'thread'
 
 module UrbanPass
   class Generate
@@ -14,12 +15,14 @@ module UrbanPass
     end
 
     def generate_phrase
-      arr = []
+      threads = []
       4.times do
-        word = random_word
-        arr << remove_spaces(word)
+        threads << Thread.new { Thread.current["word"] = random_word }
       end
-      pass_phrase = arr.join
+      phrase = [] # two arrays > string concatenation
+      threads.each {|t| t.join; phrase << t["word"]}
+      phrase = phrase.join
+      pass_phrase = remove_spaces(phrase)
       copy(pass_phrase)
       return pass_phrase
     end
@@ -27,6 +30,9 @@ module UrbanPass
     def random_word
       page = Nokogiri::HTML(open("http://urbandictionary.com/random.php"))
       page.css('a.word')[0].text
+    rescue SocketError
+        puts "Your not connected to the internet, silly!"
+        exit
     end
 
     def remove_spaces(phrase)
