@@ -1,5 +1,6 @@
 require 'open-uri'
 require 'nokogiri'
+require 'urban'
 require 'clipboard'
 require 'thread'
 
@@ -30,7 +31,7 @@ module UrbanPass
     def random_word
       page = Nokogiri::HTML(open("http://urbandictionary.com/random.php"))
       page.css('a.word')[0].text
-    rescue SocketError
+      rescue SocketError
         puts "Your not connected to the internet, silly!"
         exit
     end
@@ -39,11 +40,9 @@ module UrbanPass
       phrase.gsub(" ", "")
     end
 
-
     def phrase_length(phrase)
       return phrase.length
     end
-
 
     def copy(phrase)
       word = Clipboard.copy(phrase)
