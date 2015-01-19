@@ -1,5 +1,5 @@
 # UrbanPass
-[![Gem Version](https://badge.fury.io/rb/urban_pass.svg)](http://badge.fury.io/rb/urban_pass)
+[![Gem Version](https://badge.fury.io/rb/urban_pass.svg)](http://badge.fury.io/rb/urban_pass) [![Build Status](https://travis-ci.org/enilsen16/urban_pass.svg?branch=master)](https://travis-ci.org/enilsen16/urban_pass)
 
 After dealing with multiple password generators. We decided to create a password generator thats a little different.
 
@@ -16,7 +16,7 @@ Install it yourself as:
 
 ```
 Commands:
-  urban_pass                  # Alias for urban_pass generate_phrase 
+  urban_pass                  # Alias for urban_pass generate_phrase
   urban_pass generate_phrase  # Creates a new pass-phrase
   urban_pass help [COMMAND]   # Describe available commands or one specific command
 ```
