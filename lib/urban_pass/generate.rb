@@ -50,5 +50,10 @@ module UrbanPass
         return word
       end
     end
+
+    def defination(word)
+      dictionary = Urban::Dictionary.new
+      return dictionary.search(word)
+    end
   end
 end

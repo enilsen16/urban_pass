@@ -12,6 +12,16 @@ module UrbanPass
       puts "It was copied correctly"
     end
 
+    desc "define WORD", "defines a word you may not know"
+    def define(*word)
+      words = word.join(" ")
+      urban = UrbanPass::Generate.new
+      entry = urban.defination(words)
+      word = words.upcase
+      puts "The defination for#{ word }is:"
+      puts entry.definitions.first
+    end
+
     default_task :generate_phrase
   end
 end

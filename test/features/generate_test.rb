@@ -26,4 +26,8 @@ describe "Generate" do
     copied = @urban.copy(word)
     Clipboard.paste.must_equal copied
   end
+
+  it "returns a definition the word inputed" do
+     puts @urban.defination(@word)
+  end
 end
