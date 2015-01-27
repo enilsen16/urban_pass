@@ -18,7 +18,7 @@ module UrbanPass
       urban = UrbanPass::Generate.new
       entry = urban.defination(words)
       word = words.upcase
-      puts "The defination for#{ word }is:"
+      puts "The defination for #{ word } is:"
       puts entry.definitions.first
     end
 
