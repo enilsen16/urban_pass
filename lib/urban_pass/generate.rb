@@ -22,7 +22,7 @@ module UrbanPass
       end
       phrase = [] # two arrays > string concatenation
       threads.each {|t| t.join; phrase << t["word"]}
-      phrase = phrase.join
+      phrase = phrase.join("-")
       pass_phrase = remove_spaces(phrase)
       copy(pass_phrase)
       return pass_phrase
