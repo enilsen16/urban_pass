@@ -12,7 +12,7 @@ module UrbanPass
       puts "It was copied correctly"
     end
 
-    desc "define WORD", "defines a word you may not know"
+    desc "define [WORD]", "Defines a word you may not know"
     def define(*word)
       words = word.join(" ")
       urban = UrbanPass::Generate.new

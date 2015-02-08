@@ -24,7 +24,7 @@ A list of commands:
 
 ```
   urban_pass                  # Alias for urban_pass generate_phrase
-  urban_pass define [WORD]      # defines a word you may not know
+  urban_pass define [WORD]    # Defines a word you may not know
   urban_pass generate_phrase  # Creates a new pass-phrase
   urban_pass help [COMMAND]   # Describe available commands or one specific command
 ```
